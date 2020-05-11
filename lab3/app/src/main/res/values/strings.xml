@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Services</string>
+    <string name="start_foreground_service">Start Foreground Service</string>
+    <string name="stop_foreground_service">Stop Foreground Service</string>
+    <string name="start_started_service">Start Started Service</string>
+    <string name="stop_started_service">Stop Started Service</string>
+    <string name="hello_services">Hello Services!</string>
+    <string name="started_service_activity">Started Service Activity</string>
+    <string name="bound_service_activity">Bound Service Activity</string>
+    <string name="foreground_service">Foreground Service</string>
+    <string name="intent_service">Intent Service</string>
+    <string name="get_money">Get Money</string>
+    <string name="get_count">Get count</string>
+    <string name="get_current_date">Get current date</string>
+</resources>

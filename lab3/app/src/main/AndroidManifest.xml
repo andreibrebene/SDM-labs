@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.smd.lab3"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver
+            android:name=".receivers.LuckyReceiver"
+            android:enabled="true"
+            android:exported="false">
+        </receiver>
+
+        <service
+            android:name=".services.LuckyIntentService"
+            android:exported="false">
+        </service>
+
+        <activity android:name=".view.LuckyIntentServiceActivity">
+        </activity>
+        <activity android:name=".view.ForegroundServiceActivity">
+        </activity>
+
+        <service
+            android:name=".services.ForegroundService"
+            android:exported="false">
+        </service>
+        <service
+            android:name=".services.MyBoundService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name=".services.MyStartedService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="com.smd.lab3.SERVICE_PERMISSION"/>
+
+        <activity android:name=".view.BoundServiceActivity"/>
+        <activity android:name=".view.StartedServiceActivity"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
