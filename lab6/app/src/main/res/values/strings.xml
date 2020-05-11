@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Project1</string>
+
+    <string-array name="button">
+        <item>External</item>
+        <item>Internal</item>
+        <item>Undefined</item>
+    </string-array>
+</resources>
